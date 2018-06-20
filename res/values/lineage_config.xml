@@ -26,6 +26,10 @@
         <item>com.android.localtransport/.LocalTransport</item>
     </string-array>
 
+    <!-- Hardware info -->
+    <string name="platform_revision">Platform</string>
+    <string name="total_ram">Total RAM</string>
+
     <!-- Show battery information -->
     <bool name="config_show_battery_info" translatable="false">true</bool>
 
