@@ -141,6 +141,7 @@ import com.android.settings.inputmethod.TouchpadAndMouseSettings;
 import com.android.settings.inputmethod.UserDictionaryList;
 import com.android.settings.inputmethod.UserDictionarySettings;
 import com.android.settings.language.LanguageSettings;
+import com.android.settings.livedisplay.LiveDisplaySettings;
 import com.android.settings.localepicker.LocaleListEditor;
 import com.android.settings.location.LocationServices;
 import com.android.settings.location.LocationSettings;
@@ -415,7 +416,8 @@ public class SettingsGateway {
             ZenModeFragment.class.getName(),
             ContactsStorageSettings.class.getName(),
             // Project Flare additions
-            FlareZone.class.getName()
+            FlareZone.class.getName(),
+            LiveDisplaySettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

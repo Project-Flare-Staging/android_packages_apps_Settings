@@ -526,4 +526,7 @@ public class Settings extends SettingsActivity {
 
     // FlareZone Additions.
     public static class FlareZoneSettingsActivity extends SettingsActivity {}
+
+    // LiveDisplay
+    public static class LiveDisplaySettingsActivity extends SettingsActivity { /* empty */ }
 }
