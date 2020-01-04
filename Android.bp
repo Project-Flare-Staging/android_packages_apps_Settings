@@ -69,6 +69,7 @@ android_library {
         "res-export", // for external usage
         "res-product",
         "FlareZone/res",
+        "TouchGestures/res"
     ],
 
     aaptflags: ["--extra-packages com.flare.zone",
