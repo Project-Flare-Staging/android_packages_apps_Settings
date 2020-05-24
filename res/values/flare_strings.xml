@@ -289,5 +289,10 @@
     <string name="double_tap_title">Double tap</string>
     <string name="doze_double_tap_title">Double tap to check phone</string>
     <string name="doze_double_tap_summary">Pulse notifications by a double tap</string>
-  
+
+    <!-- Navigation bar hint -->
+    <string name="show_navbar_hint_title">Navigation hint</string>
+    <string name="show_navbar_hint_summary">Show navigation hint bar at the bottom of the screen</string>
+    <string name="keyboard_no_navigation_title">Keyboard IME space</string>
+    <string name="keyboard_no_navigation_summary">Show space below keyboard when using gesture navigation</string>
 </resources>
