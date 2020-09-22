@@ -21,4 +21,9 @@
 
     <!-- Flare maintainer -->
     <string name="maintainer">Maintainer</string>
+
+    <!-- Build types, now with translations -->
+    <string name="build_type">Build Type</string>
+    <string name="flare_official">Official</string>
+    <string name="flare_unofficial">Unofficial</string>
 </resources>

@@ -29,5 +29,4 @@
         settings:allowDividerBelow="false"
         settings:iconSpaceReserved="false"/>
     <!-- <com.android.settings.OosAboutPreference/> -->
-
 </PreferenceScreen>
