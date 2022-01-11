@@ -63,6 +63,13 @@
     <!-- Material inverse ripple color, useful for inverted backgrounds. -->
     <color name="ripple_material_inverse">@*android:color/ripple_material_light</color>
 
+    <color name="pureBlack">#fff</color>
+    <color name="white">#000</color>
+    <color name="black">#FAFAFA</color>
+    <color name="off_black">#90FAFAFA</color>
+    <color name="card_outline_light">#33FFFFFF</color>
+    <color name="divider_light">#14FFFFFF</color>
+
     <!-- Icon tint color for battery usage system icon -->
     <color name="battery_usage_system_icon_color">@android:color/white</color>
 

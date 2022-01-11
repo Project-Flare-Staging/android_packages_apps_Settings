@@ -209,6 +209,13 @@
     <!-- Battery error text color -->
     <color name="battery_info_error_color_black">@*android:color/primary_text_default_material_light</color>
 
+    <color name="oos_pure_black">#fff</color>
+    <color name="oos_white">#000</color>
+    <color name="oos_black">#FAFAFA</color>
+    <color name="oos_off_black">#90FAFAFA</color>
+    <color name="oos_card_outline_light">#33FFFFFF</color>
+    <color name="oos_divider_light">#14FFFFFF</color>
+
     <!-- Background for multiple user settings page avatars -->
     <color name="user_avatar_color_bg">@androidprv:color/materialColorSurfaceContainer</color>
 
