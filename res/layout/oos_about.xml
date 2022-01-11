@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/oos_about_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+        
+        <View
+            android:layout_width="3dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/bar" />
+
+        <TextView
+            android:id="@+id/flareVer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Project Flare 2.0"
+            android:fontFamily="google-sans-medium"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/flareStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:fontFamily="google-sans"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="16sp"
+            android:alpha="0.7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/miniDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/flare_card_bg"
+        android:elevation="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:padding="20dp">
+            <ImageView
+                android:id="@+id/disp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/disp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/display_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="google-sans-medium"
+                android:textColor="?android:attr/textColorSecondary"
+                app:layout_constraintTop_toBottomOf="@id/disp"
+                app:layout_constraintStart_toStartOf="parent" />
+            <View
+                android:id="@+id/divider"
+                android:layout_width="24dp"
+                android:layout_height="2dp"
+                android:background="@drawable/bar2"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/display_about"
+                app:layout_constraintStart_toStartOf="parent" />
+            <ImageView
+                android:id="@+id/cpu"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/soc"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/divider"
+                app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/cpu_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="google-sans-medium"
+                android:textColor="?android:attr/textColorSecondary"
+                app:layout_constraintTop_toBottomOf="@id/cpu"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/device_about"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight=".4"
+            android:src="@drawable/ic_flare_settings_about" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/finalDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/miniDetails">
+
+        <LinearLayout
+            android:id="@+id/leftFinalDetail"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight=".5"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/flare_card_bg"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/batt" android:rotation="90"/>
+            <TextView android:id="@+id/battery_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="13sp" android:fontFamily="google-sans-medium" android:textColor="?android:attr/textColorSecondary" />
+            <View android:layout_width="28dp" android:layout_height="2dp" android:layout_margin="6dp" android:background="@drawable/bar2" />
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/cam"/>
+            <TextView android:id="@+id/camera_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="13sp" android:fontFamily="google-sans-medium" android:textColor="?android:attr/textColorSecondary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/righFinalDetail"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight=".5"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/flare_card_bg"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/cpu"/>
+            <TextView android:id="@+id/soc_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="13sp" android:fontFamily="google-sans-medium" android:textColor="?android:attr/textColorSecondary" />
+            <View android:layout_width="28dp" android:layout_height="2dp" android:layout_margin="6dp" android:background="@drawable/bar2" />
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_ram"/>
+            <TextView android:id="@+id/rom_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="13sp" android:fontFamily="google-sans-medium" android:textColor="?android:attr/textColorSecondary" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/flare_card_bg"
+        android:elevation="1dp"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/finalDetail">
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".65"
+            android:orientation="vertical">
+
+            <TextView 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="Maintainer" 
+                android:textSize="11sp"
+                android:fontFamily="google-sans"
+                android:textColor="?android:attr/textColorSecondary" />
+            <TextView 
+                android:id="@+id/flare_maintainer" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textSize="14sp"
+                android:fontFamily="google-sans-medium"
+                android:textColor="?android:attr/textColorPrimary" />
+            
+            <TextView 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10dp" 
+                android:text="Device" 
+                android:textSize="11sp"
+                android:fontFamily="google-sans"
+                android:textColor="?android:attr/textColorSecondary" />
+            <TextView 
+                android:id="@+id/device_name" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textSize="14sp"
+                android:fontFamily="google-sans-medium"
+                android:textColor="?android:attr/textColorPrimary" />
+
+            <TextView 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10dp" 
+                android:text="Android security update" 
+                android:textSize="11sp"
+                android:fontFamily="google-sans"
+                android:textColor="?android:attr/textColorSecondary" />
+            <TextView 
+                android:id="@+id/security_update" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textSize="14sp"
+                android:fontFamily="google-sans-medium"
+                android:textColor="?android:attr/textColorPrimary" />
+
+            <TextView 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10dp" 
+                android:text="Kernel version" 
+                android:textSize="11sp"
+                android:fontFamily="google-sans"
+                android:textColor="?android:attr/textColorSecondary" />
+            <TextView 
+                android:id="@+id/kernel_version" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textSize="12sp"
+                android:fontFamily="google-sans-medium"
+                android:textColor="?android:attr/textColorPrimary" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/android_version"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".35"
+            android:src="@drawable/a16"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
