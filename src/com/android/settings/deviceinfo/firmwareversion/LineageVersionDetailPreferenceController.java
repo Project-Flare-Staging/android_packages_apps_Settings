@@ -76,7 +76,7 @@ public class LineageVersionDetailPreferenceController extends BasePreferenceCont
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(KEY_LINEAGE_VERSION_PROP,
+        return SystemProperties.get("v"+KEY_LINEAGE_VERSION_PROP,
                 mContext.getString(R.string.unknown));
     }
 
