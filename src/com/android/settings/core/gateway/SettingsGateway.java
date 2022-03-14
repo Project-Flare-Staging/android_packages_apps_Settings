@@ -215,6 +215,8 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.flare.zone.FlareZone;
 
+import con.android.settings.wifi.tether.WifiTetherClientManager;
+
 public class SettingsGateway {
 
     /**
@@ -415,6 +417,7 @@ public class SettingsGateway {
             ZenModesListFragment.class.getName(),
             ZenModeFragment.class.getName(),
             ContactsStorageSettings.class.getName(),
+	    WifiTetherClientManager.class.getName(),
             // Project Flare additions
             FlareZone.class.getName(),
             LiveDisplaySettings.class.getName()
