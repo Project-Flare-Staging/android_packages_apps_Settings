@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: DerpFest AOSP
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- DerpFest -->
+    <string name="derpfest_title" translatable="false">DerpFest</string>
+    <string name="about_device_name">Device</string>
+
+    <!-- About phone screen, DerpFest version -->
+    <string name="derpfest_version">DerpFest version</string>
+    <string name="derpfest_version_default">Unknown</string>
+
+    <!-- Hardware info -->
+    <string name="soc_model">SoC Model</string>
+    <string name="total_ram">Total RAM</string>
+
+    <!-- Notification log -->
+    <string name="notification_log_summary">Show notifications history log</string>
+
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+
+    <!-- Default getTimeSpentInApp string for Wellbeing to display. [CHAR LIMIT=NONE] --> 
+     <string name="duration_less_than_one_minute">Less than 1 Minute</string> 
+ 
+     <!-- Summary for Wellbeing screen time usage. [CHAR LIMIT=NONE] -->
+     <string name="screen_time_summary_usage_today">%1$s today</string>
+
+    <!-- Clipboard -->
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="longpress_to_clipboard">Long-press to copy</string>
+
+    <!-- Ambient wake -->
+    <string name="doze_gesture_ambient_title">Show Ambient</string>
+    <string name="doze_gesture_ambient_summary">Show Ambient Display instead of fully waking the screen up</string>
+    <string name="gesture_wake_ambient">Show Ambient</string>
+    <string name="gesture_wake">Fully wake</string>
+
+    <!-- Pulse on music track change -->
+    <string name="pulse_on_new_tracks_title">Music ticker</string>
+    <string name="pulse_on_new_tracks_summary">Show Ambient Display when a new music track is played</string>
+
+    <!-- Game Space -->
+    <string name="game_space_title">Game Space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
+
+    <!-- Annoying Notifications -->
+    <string name="notification_sound_vib_screen_on_title">Annoying Notifications</string>
+    <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+
+    <!-- If blurs are supported on SurfaceFlinger. [CHAR LIMIT=60] -->
+    <string name="enable_blurs_on_windows_title">Enable blurs</string>
+    <string name="enable_blurs_on_windows_summary">Enables blur effect in some UI elements</string>
+
+    <!-- Label for a numbered SIM card.  [CHAR LIMIT=40] -->
+    <string name="sim_card_number_title" translatable="false">SIM <xliff:g id="card_number">%1$d</xliff:g></string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Swipe to screenshot</string>
+    <string name="swipe_to_screenshot_gesture_summary">Swipe three fingers to take screenshot</string>
+
+    <!-- Smart Pause -->
+    <string name="adaptive_playback_screen_title">Smart Pause</string>
+    <string name="adaptive_playback_enabled">Use smart pause</string>
+    <string name="adaptive_playback_disabled_summary">Off</string>
+    <string name="adaptive_playback_intro_text">Automatically pauses media when the volume is muted and will resume automatically when volume is restored within the set time.</string>
+    <string name="adaptive_playback_timeout_title">Use a timeout of</string>
+    <string name="adaptive_playback_timeout_none">No timeout</string>
+    <string name="adaptive_playback_timeout_none_summary">On (no timeout)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 seconds</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">On (30 seconds)</string>
+    <string name="adaptive_playback_timeout_1_min">1 minute</string>
+    <string name="adaptive_playback_timeout_1_min_summary">On (1 minute)</string>
+    <string name="adaptive_playback_timeout_2_min">2 minutes</string>
+    <string name="adaptive_playback_timeout_2_min_summary">On (2 minutes)</string>
+    <string name="adaptive_playback_timeout_5_min">5 minutes</string>
+    <string name="adaptive_playback_timeout_5_min_summary">On (5 minutes)</string>
+    <string name="adaptive_playback_timeout_10_min">10 minutes</string>
+    <string name="adaptive_playback_timeout_10_min_summary">On (10 minutes)</string>
+
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+
+    <!-- Cycle through ringer modes gesture -->
+    <string name="prevent_ringing_option_cycle">Cycle through modes</string>
+    <string name="prevent_ringing_option_cycle_summary">On (cycle through modes)</string>
+
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
+    <string name="display_cutout_force_fullscreen_search">Search</string>
+    <string name="display_cutout_force_fullscreen_search_apps">Search apps</string>
+
+    <!-- Timeout entries -->
+    <string name="timeout_summary_never">Never</string>
+    <string name="timeout_summary_15secs">15 seconds</string>
+    <string name="timeout_summary_30secs">30 seconds</string>
+    <string name="timeout_summary_1min">1 minute</string>
+    <string name="timeout_summary_2mins">2 minutes</string>
+    <string name="timeout_summary_5mins">5 minutes</string>
+    <string name="timeout_summary_10mins">10 minutes</string>
+    <string name="timeout_summary_30mins">30 minutes</string>
+    <string name="timeout_summary_1hour">1 hour</string>
+    <string name="timeout_summary_2hours">2 hours</string>
+    <string name="timeout_summary_4hours">4 hours</string>
+    <string name="timeout_summary_8hours">8 hours</string>
+    <string name="timeout_summary_12hours">12 hours</string>
+    <string name="timeout_summary_24hours">24 hours</string>
+    <string name="timeout_summary_36hours">36 hours</string>
+    <string name="timeout_summary_48hours">48 hours</string>
+    <string name="timeout_summary_72hours">72 hours</string>
+
+    <!-- Network preferences screen, setting option name to change wifi timeout -->
+    <string name="wifi_timeout">Turn off Wi-Fi automatically</string>
+
+    <!-- Network preferences screen, setting option summary to change wifi timeout -->
+    <string name="wifi_timeout_summary">Wi-Fi will turn off after <xliff:g id="timeout_description">%1$s</xliff:g> if no network connected</string>
+    <string name="wifi_timeout_summary2">Disabled</string>
+
+    <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <string name="bluetooth_timeout">Bluetooth timeout</string>
+    <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <string name="bluetooth_timeout_summary">Bluetooth will turn off after <xliff:g id="timeout_description">%1$s</xliff:g> if no devices connected</string>
+    <string name="bluetooth_timeout_summary2">Do not automatically turn off Bluetooth</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_enable_taskbar_title">Enable taskbar</string>
+
+    <!-- Ver cool DerpFest Branding -->
+    <string name="very_cool_branding">h.</string>
+    <string name="very_cool_version">Ursinia</string>
+
+    <!-- About Phone -->
+    <string name="keywords_top_level_device_info">about phone, derpfest, device name</string>
+    <string name="more_device_info">More info</string>
+    <string name="more_device_info_summary">Show more info of the device</string>
+
+    <!-- About Phone Header -->
+    <string name="derpfest_device_title">Device</string>
+    <string name="derpfest_memory_storage_title">Memory</string>
+    <string name="derpfest_battery_size_title">Battery Capacity</string>
+    <string name="derpfest_screen_res_title">Screen Resolution</string>
+
+    <!-- My Device - Phone Number Category -->
+    <string name="sim_num_info_cat">Phone number</string>
+
+    <!-- DerpFest Customizations on homepage -->
+    <string name="derpfest_customizations_title">DerpFest Customizations</string>
+    <string name="derpfest_customizations_summary">Where the broken stuff is placed</string>
+    <string name="menu_key_derpfest">top_level_derpfest_customizations</string>
+
+    <!-- Per-app volume -->
+    <string name="app_volume">App volume</string>
+    <string name="app_volume_title">Per-app volume control</string>
+    <string name="app_volume_summary">Show per-app volume button into volume dialog</string>
+
+    <!-- WiFi Hotspot -->
+    <string name="wifi_hotspot_ap_band_title">AP Band</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Hidden network</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Your mobile hotspot\'s name won\'t appear in the list of available WLAN networks.</string>
+    <string name="wifi_hotspot_client_manager_title">Connected devices</string>
+    <string name="wifi_hotspot_client_manager_summary">List and manage devices connected to the hotspot</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">List devices connected to the hotspot</string>
+    <string name="wifi_hotspot_client_limit_title">Limit of connected devices</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Blocked Devices</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Connected Devices</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Block device</string>
+    <string name="wifi_hotspot_block_client_dialog_text">This action will disconnect \"<xliff:g id="device_name">%1$s</xliff:g>\" from this device and add it to blocklist</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Unblock device</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">The device \"<xliff:g id="device_name">%1$s</xliff:g>\" will be able to connect to this hotspot</string>
+    <string name="wifi_hotspot_client_manager_footer_text">No clients are currently available. Connected and blocked devices will be listed here when available.</string>
+    <string name="wifi_band_24ghz_and_5ghz">2.4 GHz &amp; 5 GHz</string>
+    <string name="wifi_band_24ghz_and_6ghz">2.4 GHz &amp; 6 GHz</string>
+    <string name="wifi_band_60ghz" translatable="false">60 GHz</string>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Up to <xliff:g id="device_num">%1$d</xliff:g> devices can connect to this hotspot</item>
+        <item quantity="one">Up to <xliff:g id="device_num">%1$d</xliff:g> device can connect to this hotspot</item>
+    </plurals>
+
+    <!-- Custom Timeouts -->
+    <string name="custom_timeout_summary_never">Never</string>
+    <string name="custom_timeout_summary_5secs">5 seconds</string>
+    <string name="custom_timeout_summary_10secs">10 seconds</string>
+    <string name="custom_timeout_summary_15secs">15 seconds</string>
+    <string name="custom_timeout_summary_30secs">30 seconds</string>
+    <string name="custom_timeout_summary_1min">1 minute</string>
+    <string name="custom_timeout_summary_2mins">2 minutes</string>
+    <string name="custom_timeout_summary_5mins">5 minutes</string>
+    <string name="custom_timeout_summary_10mins">10 minutes</string>
+    <string name="custom_timeout_summary_20mins">20 minutes</string>
+    <string name="custom_timeout_summary_30mins">30 minutes</string>
+    <string name="custom_timeout_summary_1hour">1 hour</string>
+    <string name="custom_timeout_summary_2hours">2 hours</string>
+    <string name="custom_timeout_summary_4hours">4 hours</string>
+    <string name="custom_timeout_summary_8hours">8 hours</string>
+    <string name="custom_timeout_summary_12hours">12 hours</string>
+    <string name="custom_timeout_summary_24hours">24 hours</string>
+    <string name="custom_timeout_summary_36hours">36 hours</string>
+    <string name="custom_timeout_summary_48hours">48 hours</string>
+    <string name="custom_timeout_summary_72hours">72 hours</string>
+
+    <!-- Default Timeouts -->
+    <string name="custom_timeout_summary_1hour_def">1 hour (Default)</string>
+
+	<!-- Doze on charge -->
+    <string name="doze_on_charge_title">Always show when charging</string>
+    <string name="doze_on_charge_summary">Show time and info all the time when charging</string>
+
+</resources>
