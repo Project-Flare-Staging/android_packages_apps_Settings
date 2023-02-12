@@ -26,7 +26,7 @@
     <string name="flare_maintainer">Flare maintainer</string>
 
     <!-- Hardware info -->
-    <string name="platform_revision">Platform</string>
+    <string name="soc_model">SoC Model</string>
     <string name="total_ram">Total RAM</string>
 
     <!-- SELinux Status -->
