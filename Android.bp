@@ -55,6 +55,7 @@ android_library {
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
+	"src-flare/**/*.java",
     ],
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/lib/**/*.kt",
@@ -62,6 +63,7 @@ android_library {
     use_resource_processor: true,
     resource_dirs: [
         "res",
+	"res-flare",
         "res-export", // for external usage
         "res-product",
     ],
