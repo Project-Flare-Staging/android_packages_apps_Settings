@@ -64,6 +64,15 @@
             android:summary="@string/app_and_notification_dashboard_summary"
             settings:highlightableMenuKey="@string/menu_key_apps"/>
 
+	<Preference
+            android:key="top_level_flare"
+            android:title="@string/flarezone_title"
+            android:summary="@string/build_tweaks_summary_title"
+            android:icon="@drawable/ic_settings_flare"
+            android:order="-55"
+            android:fragment="com.flare.zone.FlareZone"
+            settings:controller="com.flare.zone.TopLevelExtensionsEntryPreferenceController" />
+
         <com.android.settings.widget.HomepagePreference
             android:fragment="com.android.settings.notification.ConfigureNotificationSettings"
             android:icon="@drawable/ic_notifications_filled"
