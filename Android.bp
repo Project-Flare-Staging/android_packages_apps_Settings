@@ -55,7 +55,6 @@ android_library {
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
-	"src-flare/**/*.java",
 	"FlareZone/src/**/*.java",
 	"FlareZone/src/**/*.kt",
     ],
@@ -65,7 +64,6 @@ android_library {
     use_resource_processor: true,
     resource_dirs: [
         "res",
-	"res-flare",
         "res-export", // for external usage
         "res-product",
         "FlareZone/res",

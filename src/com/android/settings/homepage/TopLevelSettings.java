@@ -25,7 +25,6 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.os.SystemProperties;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -48,6 +47,7 @@ import com.android.settings.activityembedding.ActivityEmbeddingUtils;
 import com.android.settings.core.RoundCornerPreferenceAdapter;
 import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.dashboard.DashboardFragment;
+import com.android.settings.flags.Flags;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.support.SupportPreferenceController;
@@ -88,7 +88,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.flare_top_level_settings;
+        return Flags.homepageRevamp() ? R.xml.top_level_settings_v2 : R.xml.top_level_settings;
     }
 
     @Override
@@ -212,16 +212,8 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
-	final PreferenceScreen screen = getPreferenceScreen();
-	for (int i = 0; i < screen.getPreferenceCount(); i++) {
-            Preference pref = screen.getPreference(i);
-            boolean isValid = pref.isEnabled() && pref.isVisible() && pref.getTitle() != null;
-            if (isValid && pref.getLayoutResource() != R.layout.flare_dashboard_preference_top && 
-                pref.getLayoutResource() != R.layout.flare_dashboard_preference_full && 
-                pref.getLayoutResource() != R.layout.flare_dashboard_preference_phone && 
-                pref.getLayoutResource() != R.layout.flare_dashboard_preference_bottom) {
-                pref.setLayoutResource(R.layout.flare_dashboard_preference_middle);
-            }
+        if (Flags.homepageRevamp()) {
+            return;
         }
         int tintColor = Utils.getHomepageIconColor(getContext());
         iteratePreferences(preference -> {
@@ -352,6 +344,9 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
             return mHighlightMixin.onCreateAdapter(this, preferenceScreen, mScrollNeeded);
         }
 
+        if (Flags.homepageRevamp()) {
+            return new RoundCornerPreferenceAdapter(preferenceScreen);
+        }
         return super.onCreateAdapter(preferenceScreen);
     }
 
@@ -398,7 +393,10 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.flare_top_level_settings) {
+            new BaseSearchIndexProvider(
+                    Flags.homepageRevamp()
+                            ? R.xml.top_level_settings_v2
+                            : R.xml.top_level_settings) {
 
                 @Override
                 protected boolean isPageSearchEnabled(Context context) {

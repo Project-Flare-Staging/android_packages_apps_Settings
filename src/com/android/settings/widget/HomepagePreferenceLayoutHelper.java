@@ -16,7 +16,6 @@
 
 package com.android.settings.widget;
 
-import android.os.SystemProperties;
 import android.view.View;
 
 import androidx.preference.Preference;
@@ -42,7 +41,7 @@ public class HomepagePreferenceLayoutHelper {
 
     public HomepagePreferenceLayoutHelper(Preference preference) {
         preference.setLayoutResource(
-                SystemProperties.getBoolean("persist.sys.settings.revamp_ui", false)
+                Flags.homepageRevamp()
                         ? R.layout.homepage_preference_v2
                         : R.layout.homepage_preference);
     }
