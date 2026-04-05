@@ -24,10 +24,6 @@
     <string name="keyboard_extras_title">Extras</string>
     <string name="advanced_keyboard_settings_title">Advanced settings</string>
 
-    <!-- Android debugging as root -->
-    <string name="adb_enable_root">Rooted debugging</string>
-    <string name="adb_enable_summary_root">Allow running Android debugging as root</string>
-
     <!-- Backup Transport selection settings menu and activity title -->
     <string name="backup_transport_setting_label">Change backup provider</string>
     <string name="backup_transport_title">Select backup provider</string>
@@ -35,9 +31,6 @@
     <!-- Black theme for dark mode -->
     <string name="berry_black_theme_title">Pure black</string>
     <string name="berry_black_theme_summary">Pure black background for dark theme</string>
-
-    <!-- Device Info screen. LineageOS legal. -->
-    <string name="lineagelicense_title">LineageOS legal</string>
 
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
     <string name="show_dev_countdown_cm">{count, plural,
