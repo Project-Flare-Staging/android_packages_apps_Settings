@@ -59,8 +59,8 @@ android_library {
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
-        "crDroidSettings/src/**/*.java",
-        "crDroidSettings/src/**/*.kt",
+        "FlareZone/src/**/*.java",
+        "FlareZone/src/**/*.kt",
     ],
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/lib/**/*.kt",
@@ -73,7 +73,7 @@ android_library {
         "res",
         "res-export", // for external usage
         "res-product",
-        "crDroidSettings/res",
+        "FlareZone/res",
     ],
 
     static_libs: [
